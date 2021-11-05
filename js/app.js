@@ -1,18 +1,40 @@
+
 var typed = new Typed('.element', {
-    strings: ['', 'Diseñador', 'Front-end', 'YouTuber', 'Freelance'],
-    typedSpeed: 40,
-    backDelay: 700,
+    strings: ['',
+        'Freelance',
+        'YouTuber',
+        'Desarrollador',
+        'Front-end'
+    ],
+    typeSpeed : 40 ,
+    backDelay : 700 ,
     backSpeed: 100,
-    loop: true
+    loop: true,    
 });
 
-var typed = new Typed('.animacion2', {
-    strings: ['', 'Mattyu Coder'],
-    typedSpeed: 40,
-    backDelay: 700,
+var typed = new Typed('.name', {
+    strings: ['', 'Mateo Mendoza'],
+    typeSpeed : 40 ,
+    backDelay : 700 ,
     backSpeed: 100,
-    loop: true
+    loop: true,    
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

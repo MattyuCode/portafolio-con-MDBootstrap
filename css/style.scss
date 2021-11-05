@@ -5,6 +5,7 @@
 body::-webkit-scrollbar {
     width: 8px;
     height: 8px;
+    // display: none;  
 }
 
 body::-webkit-scrollbar-thumb {
@@ -13,15 +14,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-
     background: #b3b3b3;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
 }
 
 
 .navbar {
     z-index: 1;
+    // background: linear-gradient(to left, #36d1dc, #e51dec);
     background: rgba(0, 0, 0, 0.514);
+
 
     .navbar-brand strong {
         color: #fff;
@@ -32,14 +38,16 @@ body::-webkit-scrollbar-thumb:hover {
 
     .navbar-brand span {
         color: crimson;
-        font-weight: 300;
         font-size: 25px;
+        font-weight: 300;
         font-family: 'Fredoka One', cursive;
     }
 }
 
+
 .top-nav-collapse {
     background: linear-gradient(to left, #2a4cbb, #0d8b94);
+    // background-color: #4285F4;
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,8 +56,8 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
-.inicio {
 
+.inicio {
     .cuadro-01 {
         position: absolute;
         width: 30px;
@@ -60,7 +68,7 @@ body::-webkit-scrollbar-thumb:hover {
         animation: ani01 5s linear infinite;
 
         &:hover {
-            border: 2px solid yellow;
+            border: 2px solid yellowgreen;
         }
     }
 
@@ -75,12 +83,12 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     .puntitos-02 {
-        .efecto {
+        .efectos {
             position: absolute;
         }
     }
 
-    .efectoPuntos {
+    .efectosDePuntos {
         left: 3%;
         bottom: 20%;
         width: 40px;
@@ -111,38 +119,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     height: 100vh;
     min-height: 500;
-    background: linear-gradient(to left, hsla(0, 0%, 0%, 0.788), hsla(0, 0%, 0%, 0.473)),
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.788), hsla(0, 0%, 0%, 0.473)),
     url(../img/header.jpg);
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 
     .row {
@@ -151,8 +134,8 @@ body::-webkit-scrollbar-thumb:hover {
             margin: auto 0 auto 40px;
 
             .text-1 {
-                font-size: 25px;
                 font-weight: 650;
+                font-size: 27px;
                 color: #d3d3d3;
             }
 
@@ -160,7 +143,7 @@ body::-webkit-scrollbar-thumb:hover {
                 font-size: 70px;
                 font-weight: 600;
                 margin-left: -3px;
-                color: #d3d3d3;
+                color: rgb(219, 219, 219);
             }
 
             .text-3 {
@@ -168,12 +151,12 @@ body::-webkit-scrollbar-thumb:hover {
                 font-weight: 600;
                 font-family: 'Times New Roman', Times, serif;
                 margin: 5px 0;
-                color: #d3d3d3;
+                color: rgb(206, 203, 203);
+            }
 
-                span {
-                    color: crimson;
-                    font-weight: 500;
-                }
+            .text-3 span {
+                color: rgb(235, 0, 70);
+                font-weight: 500;
             }
         }
     }
@@ -189,7 +172,7 @@ body::-webkit-scrollbar-thumb:hover {
         left: 50%;
         transform: translateY(-20px) translateX(-50%);
         margin-left: -15px;
-        animation: scrolldown 3s ease infinite;
+        animation: scrollDown 3s ease infinite;
 
         &:hover {
             transform: scale(0.9);
@@ -197,7 +180,7 @@ body::-webkit-scrollbar-thumb:hover {
         }
     }
 
-    @keyframes scrolldown {
+    @keyframes scrollDown {
 
         0%,
         20%,
@@ -213,6 +196,16 @@ body::-webkit-scrollbar-thumb:hover {
 
         60% {
             transform: translateY(-15px);
+        }
+    }
+
+}
+
+.about {
+    .contenedor {
+        iframe {
+            width: 100%;
+            height: 500px;
         }
     }
 }
